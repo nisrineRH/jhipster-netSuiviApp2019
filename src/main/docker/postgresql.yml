@@ -1,0 +1,11 @@
+version: '2'
+services:
+  netsuiviapp2019-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/NetSuiviApp2019/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=NetSuiviApp2019
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
